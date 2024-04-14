@@ -24,8 +24,8 @@ body {
   right: -30px;
   bottom: -30px;
   left: -30px;
-  background-image: url("https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg");
-  background-repeat: no-repeat;
+  background-color: #d8e2e8;
+    background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
   filter: blur(40px);
@@ -104,7 +104,7 @@ body {
 #track-time.active #current-time,
 #track-time.active #track-length {
   color: #f86d92;
-  background-color: transparent;
+  background-color:transparent;
 }
 
 #s-area,
@@ -121,8 +121,8 @@ body {
 
 #ins-time {
   position: absolute;
-  top: -29px;
-  color: #fff;
+  top: -39px;
+  color: #d8e2e8;
   font-size: 12px;
   white-space: pre;
   padding: 5px 6px;
@@ -216,17 +216,7 @@ body {
 
 #album-art.active img.active {
   z-index: 1;
-  -webkit-animation: rotateAlbumArt 3s linear 0s infinite forwards;
-          animation: rotateAlbumArt 3s linear 0s infinite forwards;
-}
-
-@-webkit-keyframes rotateAlbumArt {
-  0% {
-    transform: rotateZ(0);
-  }
-  100% {
-    transform: rotateZ(360deg);
-  }
+  animation: rotateAlbumArt 3s linear 0s infinite forwards;
 }
 
 @keyframes rotateAlbumArt {
